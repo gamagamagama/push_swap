@@ -6,7 +6,7 @@
 /*   By: matus <matus@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 07:38:34 by matus             #+#    #+#             */
-/*   Updated: 2024/11/05 07:47:18 by matus            ###   ########.fr       */
+/*   Updated: 2024/11/05 11:41:12 by matus            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	reset_stack(t_node_stack *stack)
 
 void	check_5con(t_node_stack **a, t_node_stack **b, size_t total_len)
 {
-	if (!((a)||(b)))
+	if (!((a) || (b)))
 	{
 		handle_error(a);
 		handle_error(b);

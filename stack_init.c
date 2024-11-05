@@ -6,7 +6,7 @@
 /*   By: matus <matus@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:42:35 by matus             #+#    #+#             */
-/*   Updated: 2024/11/05 09:46:31 by matus            ###   ########.fr       */
+/*   Updated: 2024/11/05 11:43:53 by matus            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ static long	ft_atol(const char *str)
 
 	res = 0;
 	sign = 1;
-
 	while (*str == ' ' || *str == '\t' || *str == '\n'
 		|| *str == '\v' || *str == '\f' || *str == '\r')
 		str++;
@@ -88,7 +87,6 @@ void	stack_init(t_node_stack **a, char **argv)
 	size_t	i;
 
 	i = 0;
-
 	while (argv[i])
 	{
 		if (ft_syntax_err(argv[i]))

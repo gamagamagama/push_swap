@@ -6,7 +6,7 @@
 /*   By: matus <matus@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:45:47 by matus             #+#    #+#             */
-/*   Updated: 2024/11/05 10:20:26 by matus            ###   ########.fr       */
+/*   Updated: 2024/11/05 11:44:29 by matus            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,6 @@ static char	*get_word(char *str, char c, bool yes)
 	}
 	return (NULL);
 }
-
 
 char	**ft_spliter(char *str, char c)
 {

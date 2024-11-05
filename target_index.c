@@ -6,7 +6,7 @@
 /*   By: matus <matus@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 17:45:58 by matus             #+#    #+#             */
-/*   Updated: 2024/11/05 10:24:34 by matus            ###   ########.fr       */
+/*   Updated: 2024/11/05 11:45:37 by matus            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ void	initialize_target_indices(t_node_stack *a,
 	smallest = find_lowest(a);
 	*min_index = 0;
 	*max_index = stack_len(a) - 1;
-
 	if (smallest)
 		smallest->tar_index = *min_index;
 	if (biggest)
@@ -98,14 +97,3 @@ void	flag_stack_nodes(t_node_stack *stack, size_t min,
 		stack = stack->next;
 	}
 }
-
-void	flag_stack(t_node_stack *stack, size_t stacklen)
-{
-	size_t min; 
-	size_t mid; 
-	size_t max;
-	
-	calculate_chunks(stacklen, &min, &mid, &max);
-	flag_stack_nodes(stack, min, mid, max);
-}
-

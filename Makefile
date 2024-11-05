@@ -6,7 +6,7 @@
 #    By: matus <matus@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/29 17:42:09 by matus             #+#    #+#              #
-#    Updated: 2024/10/29 17:42:11 by matus            ###   ########.fr        #
+#    Updated: 2024/11/05 11:39:10 by matus            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ MAKE_LIB = ar -rcs
 
 SRCS = $(wildcard *.c)
 OBJS = $(SRCS:.c=.o)
-EXCLUDED_FILES = main_all.c \
+# EXCLUDED_FILES = main_all.c 
 			
 
 
